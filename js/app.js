@@ -1,5 +1,5 @@
-let latlng = L.latLng(40.827787, -73.925903);
-let map = L.map('map').setView(latlng, 12);
+var latlng = L.latLng(40.827787, -73.925903);
+var map = L.map('map').setView(latlng, 12);
 
 L.tileLayer(
   'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
@@ -9,7 +9,7 @@ L.tileLayer(
   }
 ).addTo(map);
 
-let control = L.Routing.control({
+var control = L.Routing.control({
   waypoints: [
     L.latLng(40.7580, -73.9855),
     L.latLng(40.8896, -73.9028)
