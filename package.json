@@ -1,0 +1,24 @@
+{
+  "name": "leaflet-routing",
+  "version": "1.0.0",
+  "description": "Routing using Leaflet and OSRM",
+  "main": "app.js",
+  "scripts": {
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "browserify app.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naskoap/leaflet-routing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naskoap/leaflet-routing/issues"
+  },
+  "homepage": "https://github.com/naskoap/leaflet-routing#readme",
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^16.5.0"
+  }
+}
