@@ -24,10 +24,5 @@
   "devDependencies": {
     "beefy": "^2.1.8",
     "browserify": "^16.5.0"
-  },
-  "buildpacks": [
-    {
-        "url": "https://github.com/carloluis/heroku-buildpack-vim"
-    }
-  ]
+  }
 }
