@@ -1,5 +1,5 @@
-var latlng = L.latLng(40.827787, -73.925903);
-var map = L.map('map').setView(latlng, 12);
+let center = L.latLng(40.735864, -73.980492);
+var map = L.map('map').setView(center, 12);
 
 L.tileLayer(
   'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
@@ -11,8 +11,8 @@ L.tileLayer(
 
 var control = L.Routing.control({
   waypoints: [
-    L.latLng(40.7580, -73.9855),
-    L.latLng(40.8896, -73.9028)
+    L.latLng(40.702518, -74.014961), //Battery Park
+    L.latLng(40.730623, -73.997602) //Washington Sq. Park
   ]
 }).addTo(map);
 
