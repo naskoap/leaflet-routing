@@ -27,6 +27,7 @@ new Vue({
 
       //instantiate a new routing control with the provided waypoints
       this.control = L.Routing.control({
+        collapsible: true, //collapse button for small screens
         waypoints: [
           L.latLng(40.702518, -74.014961), //Battery Park
           L.latLng(40.730623, -73.997602) //Washington Sq. Park
