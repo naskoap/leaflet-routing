@@ -1,11 +1,11 @@
 {
   "name": "leaflet-routing",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Routing using Leaflet and OSRM",
   "main": "routing.js",
   "scripts": {
-    "start": "beefy routing.js:bundle.js --live",
-    "bundle": "browserify routing.js -o bundle.js"
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "browserify app.js -o bundle.js"
   },
   "repository": {
     "type": "git",
