@@ -17,7 +17,7 @@ new Vue({
   },
   methods: {
     initMap() {
-      let latlng = L.latLng(40.735864, -73.980492);
+      let latlng = L.latLng(35.110922, -85.450561);
       this.map = L.map('map').setView(latlng, 11);
       this.tileLayer = L.tileLayer(
         'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
@@ -29,8 +29,8 @@ new Vue({
     },
     reverseRoute() {
       this.plan = new ReversablePlan([
-            L.latLng(40.702518, -74.014961), //Battery Park
-            L.latLng(40.730623, -73.997602) //Washington Sq. Park
+          L.latLng(35.204739, -85.921596), //Sewanee
+          L.latLng(35.032494, -85.201473) //Chattanooga
         ], {
             geocoder: L.Control.Geocoder.nominatim(), //simple geocoder form to locate places
             routeWhileDragging: true
